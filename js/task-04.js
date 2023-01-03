@@ -1,7 +1,7 @@
 const counterValue = {
-  value: 0,
+  value : 0,
   increment() {
-    console.log("inkrement -> this", this);
+    console.log("increment -> this", this);
     this.value += 1;
   },
   decrement() {
@@ -11,19 +11,20 @@ const counterValue = {
 };
 
 const decrementBtn = document.querySelector(
-  '.counter button[data-action="decrement"]'
+  '#counter button[data-action="decrement"]'
 );
 const incrementBtn = document.querySelector(
-  '.counter button[data-action="increment"]'
+  '#counter button[data-action="increment"]'
 );
 const valueEl = document.querySelector("#value");
 
-decrementBtn.addEventListener('click', function () {""
-    console.log('click')
 
-    counterValue.decrement();
-    console.log(counterValue);
-    valueEl.textContent = counterValue.value;
+decrementBtn.addEventListener("click", function () {
+  console.log("click");
+
+  counterValue.decrement();
+  console.log(counterValue);
+  valueEl.textContent = counterValue.value;
 });
 
 incrementBtn.addEventListener('click', function () {
