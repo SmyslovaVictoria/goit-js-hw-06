@@ -10,3 +10,15 @@ function myFunction(category) {
     const categoryListEl = categoryTitleEl.nextElementSibling;
     console.log("Elements: ", categoryListEl.childElementCount);
 }
+
+
+const pureMultiply = (array, value) => {
+  const newArray = [];
+
+  array.forEach(element => {
+    newArray.push(element * value);
+  });
+
+  return newArray;
+};
+

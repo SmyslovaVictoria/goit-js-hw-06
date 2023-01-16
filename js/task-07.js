@@ -1,9 +1,10 @@
-const controlInput = document.querySelector("#font-size-control");
-const text = document.querySelector("#text");
+const textEl = document.getElementById("text");
 
-controlInput.addEventListener("input", chenges);
+const inputEl = document.getElementById("font-size-control");
 
-function chenges(event) {
-    event.preventDefault();
-    
-};
+inputEl.addEventListener("input", (e) => {
+  const size = inputEl.value;
+
+
+  textEl.style.fontSize = size + "px";
+});
