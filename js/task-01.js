@@ -12,13 +12,4 @@ function myFunction(category) {
 }
 
 
-const pureMultiply = (array, value) => {
-  const newArray = [];
-
-  array.forEach(element => {
-    newArray.push(element * value);
-  });
-
-  return newArray;
-};
 
