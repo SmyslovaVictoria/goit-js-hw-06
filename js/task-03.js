@@ -13,14 +13,19 @@ const images = [
   },
 ];
 
-
 const newImagesList = document.querySelector(".gallery");
 
+// const imageCards = images
+//   .map((images) => `<li class="gallery__item"><img class="gallery__img" srs="${images.url}" alt="${images.alt}"></li>`)
+//   .join("");
+
+// console.log(imageCards);
+
 const imageCards = images
-  .map(images => `<li class="gallery__item"><img class="gallery__img" srs="${images.url}" alt="${images.alt}"></li>`)
+  .map(
+    (image) => `<li class = "gallery__item"><img class = "gallery__img" srs= "${image.url}" width = "600" alt = "${image.alt}"></img></li>`
+  )
   .join("");
 
-console.log(imageCards);
 newImagesList.insertAdjacentHTML("afterbegin", imageCards);
-
-
+console.log(imageCards);
