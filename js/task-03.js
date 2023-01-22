@@ -15,8 +15,10 @@ const images = [
 
 const newImagesList = document.querySelector(".gallery");
 const imageCards = images
+  .preventDefault()
   .map(
-    (image) => `<li class = "gallery__item"><img class = "gallery__img" src= "${image.url}" width = "600" alt = "${image.alt}"></img></li>`
+    (image) =>
+      `<li class = "gallery__item"><img class = "gallery__img" src= "${image.url}" width = "600" alt = "${image.alt}"></img></li>`
   )
   .join("");
 
